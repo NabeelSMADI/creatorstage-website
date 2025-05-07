@@ -40,7 +40,7 @@ const LandingPage = () => {
           </h1>
           <p className="text-lg sm:text-xl max-w-3xl mx-auto text-gray-700">
             A powerful desktop application for content creators, influencers, and coaches
-            to schedule and automatically publish TikTok videos with an intuitive drag-and-drop calendar interface.
+            to schedule and automatically publish TikTok videos with an intuitive calendar interface.
           </p>
         </div>
         
@@ -61,7 +61,7 @@ const LandingPage = () => {
               />
               <div className="p-4">
                 <h3 className="font-medium text-lg">Intuitive Calendar Interface</h3>
-                <p className="text-gray-600">Schedule videos with a simple drag-and-drop experience</p>
+                <p className="text-gray-600">Schedule videos with a simple experience</p>
               </div>
             </div>
             
