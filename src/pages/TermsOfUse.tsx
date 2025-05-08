@@ -1,4 +1,3 @@
-
 import { ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
@@ -47,9 +46,29 @@ const TermsOfUse = () => {
               to TikTok using their authenticated TikTok account.
             </p>
           </div>
-          
+
+          {/* User Consent and Data Handling */}
           <div>
-            <h2 className="text-xl font-medium mb-2">3. User Responsibilities</h2>
+            <h2 className="text-xl font-medium mb-2">3. User Consent and Data Usage</h2>
+            <p>
+              By using CreatorStage, you consent to the collection, storage, and use of 
+              your TikTok access tokens and refresh tokens for the purpose of scheduling 
+              and publishing videos to TikTok. We collect this data through TikTok’s 
+              OAuth authentication process and store it securely on our servers.
+            </p>
+            <p>
+              You can revoke access to your TikTok account at any time by logging out 
+              from the app. Upon revocation, we will delete all stored tokens related 
+              to your account.
+            </p>
+            <p>
+              We take appropriate measures to ensure the security of your tokens, including 
+              encryption and secure storage practices.
+            </p>
+          </div>
+
+          <div>
+            <h2 className="text-xl font-medium mb-2">4. User Responsibilities</h2>
             <p>Users agree not to:</p>
             <ul className="list-disc list-inside ml-4 space-y-1">
               <li>Use the app for illegal or unauthorized purposes</li>
@@ -57,9 +76,9 @@ const TermsOfUse = () => {
               <li>Share their TikTok token or access with unauthorized parties</li>
             </ul>
           </div>
-          
+
           <div>
-            <h2 className="text-xl font-medium mb-2">4. Intellectual Property</h2>
+            <h2 className="text-xl font-medium mb-2">5. Intellectual Property</h2>
             <p>
               All content, designs, and source code are the intellectual property of 
               CreatorStage. You are granted a limited license to use the software for 
@@ -68,7 +87,7 @@ const TermsOfUse = () => {
           </div>
           
           <div>
-            <h2 className="text-xl font-medium mb-2">5. Limitation of Liability</h2>
+            <h2 className="text-xl font-medium mb-2">6. Limitation of Liability</h2>
             <p>
               CreatorStage is provided "as is." We are not liable for any losses or 
               damages related to scheduled posts, failed uploads, or TikTok API limitations.
@@ -76,7 +95,7 @@ const TermsOfUse = () => {
           </div>
           
           <div>
-            <h2 className="text-xl font-medium mb-2">6. Termination</h2>
+            <h2 className="text-xl font-medium mb-2">7. Termination</h2>
             <p>
               We reserve the right to suspend or terminate your use of the app for violations 
               of these terms.
@@ -84,20 +103,31 @@ const TermsOfUse = () => {
           </div>
           
           <div>
-            <h2 className="text-xl font-medium mb-2">7. Governing Law</h2>
+            <h2 className="text-xl font-medium mb-2">8. Governing Law</h2>
             <p>These terms are governed by the laws of the United States.</p>
           </div>
           
           <div>
-            <h2 className="text-xl font-medium mb-2">8. Changes to Terms</h2>
+            <h2 className="text-xl font-medium mb-2">9. Changes to Terms</h2>
             <p>
               We may update these terms at any time. Changes will be reflected on this page, 
               and continued use of the app indicates acceptance of the changes.
             </p>
           </div>
-          
+
           <div>
-            <h2 className="text-xl font-medium mb-2">9. Contact</h2>
+            <h2 className="text-xl font-medium mb-2">10. Compliance with TikTok’s API Policies</h2>
+            <p>
+              Our app integrates with TikTok’s API to provide functionality for scheduling 
+              and publishing videos. By using the app, you agree to comply with TikTok's API 
+              usage guidelines, including the proper handling of access tokens, security of 
+              user data, and adhering to TikTok's terms of service. You agree not to misuse 
+              or abuse the TikTok API.
+            </p>
+          </div>
+
+          <div>
+            <h2 className="text-xl font-medium mb-2">11. Contact</h2>
             <p>
               For questions or feedback, contact us at:<br />
               <strong>Email:</strong> support@creatorstage.app

@@ -1,4 +1,3 @@
-
 import { ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
@@ -33,14 +32,15 @@ const PrivacyPolicy = () => {
           <p>
             CreatorStage ("we", "our", or "us") respects your privacy and is committed 
             to protecting the information you provide through the CreatorStage desktop 
-            application and website.
+            application and website. This Privacy Policy outlines how we collect, use, 
+            store, and protect your information in compliance with TikTok’s API policies.
           </p>
           
           <div>
             <h2 className="text-xl font-medium mb-2">1. Information We Collect</h2>
             <p>We may collect the following information:</p>
             <ul className="list-disc list-inside ml-4 space-y-1">
-              <li>Your TikTok account information (via OAuth login)</li>
+              <li>Your TikTok account information (via OAuth login, including access tokens and refresh tokens)</li>
               <li>Your name and email address (if provided)</li>
               <li>Local video metadata (file name, duration, folder name)</li>
               <li>Scheduling preferences and custom caption templates</li>
@@ -53,7 +53,7 @@ const PrivacyPolicy = () => {
             <p>We use your information to:</p>
             <ul className="list-disc list-inside ml-4 space-y-1">
               <li>Display your TikTok profile in the app</li>
-              <li>Schedule and publish videos on your behalf</li>
+              <li>Schedule and publish videos on your behalf via TikTok’s API</li>
               <li>Apply your selected caption templates</li>
               <li>Improve app functionality and user experience</li>
             </ul>
@@ -62,18 +62,25 @@ const PrivacyPolicy = () => {
           <div>
             <h2 className="text-xl font-medium mb-2">3. Information Sharing</h2>
             <p>
-              We do not sell or share your data with third parties. We only interact 
-              with the TikTok API to perform authorized actions like uploading and 
-              publishing videos using your access token.
+              We do not sell, rent, or share your personal data with third parties. 
+              We only interact with the TikTok API to perform authorized actions like 
+              uploading and publishing videos using your access token, in accordance with 
+              TikTok's API policies.
             </p>
           </div>
           
           <div>
             <h2 className="text-xl font-medium mb-2">4. Data Storage and Security</h2>
             <p>
-              All data is stored locally on your machine. We do not store any personal 
-              or video data on external servers. Your TikTok token is stored securely 
-              for scheduled actions and refreshed automatically.
+              All data related to your TikTok account, including access and refresh tokens, 
+              is stored securely. We store your data locally on your machine and do not 
+              store any personal or video data on external servers. Your TikTok token is 
+              securely stored for scheduled actions and is refreshed automatically using 
+              the refresh token.
+            </p>
+            <p>
+              We implement strong security measures to protect your tokens, including 
+              encryption and secure storage practices in line with TikTok’s API security requirements.
             </p>
           </div>
           
@@ -82,8 +89,9 @@ const PrivacyPolicy = () => {
             <p>You have the right to:</p>
             <ul className="list-disc list-inside ml-4 space-y-1">
               <li>View or edit your stored data</li>
-              <li>Revoke TikTok access at any time</li>
+              <li>Revoke TikTok access at any time by disconnecting your account</li>
               <li>Delete all saved preferences and schedules locally</li>
+              <li>Request deletion of your data in compliance with applicable data protection laws</li>
             </ul>
           </div>
           
@@ -91,14 +99,25 @@ const PrivacyPolicy = () => {
             <h2 className="text-xl font-medium mb-2">6. Children's Privacy</h2>
             <p>
               This app is not intended for use by individuals under the age of 13. 
-              We do not knowingly collect or store data from children.
+              We do not knowingly collect or store data from children. If we become aware 
+              that we have collected personal information from a child, we will take steps 
+              to delete such information.
             </p>
           </div>
           
           <div>
-            <h2 className="text-xl font-medium mb-2">7. Contact</h2>
+            <h2 className="text-xl font-medium mb-2">7. Changes to This Privacy Policy</h2>
             <p>
-              If you have any questions about this Privacy Policy, contact us at:<br />
+              We may update this Privacy Policy from time to time. Any changes will be posted 
+              on this page, and continued use of the app after changes are made will constitute 
+              your acceptance of the revised policy.
+            </p>
+          </div>
+
+          <div>
+            <h2 className="text-xl font-medium mb-2">8. Contact</h2>
+            <p>
+              If you have any questions about this Privacy Policy, please contact us at:<br />
               <strong>Email:</strong> support@creatorstage.app
             </p>
           </div>
